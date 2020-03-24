@@ -10,7 +10,7 @@
  
  - Detects frustration and/or confusion in messages and responds with corresponding quotes
  
- - Supports some osu! Discord bots' commands:
+ - Supports some osu! Discord bots' commands (40% chance of occurring):
    - w!recent or &recent
    - &top or o!top (username)
  - See what happens when you say any variation of "uwu"
