@@ -14,4 +14,5 @@
  - See what happens when you say any variation of "uwu"
 
 ## Adding ChitandaBot to Your Discord Server
-To add Chitanda to your server, use [this link](https://discordapp.com/api/oauth2/authorize?client_id=691787045881905182&permissions=134220800&scope=bot).
+### To add Chitanda to your server, use [this link](https://discordapp.com/api/oauth2/authorize?client_id=691787045881905182&permissions=134220800&scope=bot).
+*Direct link: https://discordapp.com/api/oauth2/authorize?client_id=691787045881905182&permissions=134220800&scope=bot*
