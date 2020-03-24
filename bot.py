@@ -14,9 +14,12 @@ async def on_message(message):
         return
 
     msg = message.content
-    questionPresent = re.search(".* *([Hh][Oo]+[Ww]+)|([Ww][Hh]*[Aa]+[Tt]*) *.*",msg)
+    questionPresent = re.search(".* *([Hh][Oo]+[Ww]+)|([Ww][Hh]*[Aa]+[Tt]*)|([Ww][Hh]+[Yy]+) *.*",msg)
+    uwu = re.search(".* *[Uu]+[Ww]+[Uu]+ *.*",msg)
 
     if questionPresent:
         await message.channel.send('Watashi, ki ni narimasu!')
+    elif uwu:
+	     await message.channel.send(':flushed:')
     
 client.run(token)
