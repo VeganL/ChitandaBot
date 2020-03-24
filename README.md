@@ -7,7 +7,9 @@
 
 ## Features
  - Says her signature catchphrase whenever a message with any variation of "what" or "how" is sent by a user
+ 
  - Detects frustration and/or confusion in messages and responds with corresponding quotes
+ 
  - Supports some osu! Discord bots' commands:
    - w!recent or &recent
    - &top or o!top (username)
