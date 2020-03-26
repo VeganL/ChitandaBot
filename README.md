@@ -10,9 +10,10 @@
  
  - Detects frustration and/or confusion in messages and responds with corresponding quotes
  
- - Supports some osu! Discord bots' commands (40% chance of occurring):
-   - w!recent or &recent
-   - &top or o!top (username)
+ - Supports some osu! Discord bots' (20% chance of occurring), gives encouraging quote:
+   - [Kirameki Bot](https://kirameki.one/)
+   - [Tatsumaki Bot](https://tatsu.gg/)
+   - [owo Bot](https://github.com/AznStevy/owo)
  - See what happens when you say any variation of "uwu"
 
 ## Adding ChitandaBot to Your Discord Server
