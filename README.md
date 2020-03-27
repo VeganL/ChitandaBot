@@ -16,5 +16,7 @@
    - [owo Bot](https://github.com/AznStevy/owo)
  - See what happens when you say any variation of "uwu"
 
+ - Tells you it's spring if someone says it's cold
+
 ## Adding ChitandaBot to Your Discord Server
 ### To add Chitanda to your server, use [this link](https://discordapp.com/api/oauth2/authorize?client_id=691787045881905182&permissions=134220800&scope=bot).
