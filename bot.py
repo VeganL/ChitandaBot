@@ -34,5 +34,5 @@ async def on_message(message):
         await message.channel.send('*Watashi, ki ni narimasu!* :astonished:')
     elif uwu:
         await message.channel.send(':flushed:')
-    
+
 client.run(token)
