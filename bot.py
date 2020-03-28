@@ -5,7 +5,7 @@ tokenFile = open("token.txt", "r")
 token = tokenFile.read().rstrip()
 
 botsFile = open("supportedBots.json", "r")
-supportedOsuBots = json.loads(botsFile.read.rstrip())
+supportedOsuBots = json.loads(botsFile.read().rstrip())
 
 @client.event
 async def on_ready():
