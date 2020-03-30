@@ -1,11 +1,12 @@
 import discord, re, random, json
 
 client = discord.Client()
-tokenFile = open("token.txt", "r")
-token = tokenFile.read().rstrip()
 
-botsFile = open("supportedBots.json", "r")
-supportedOsuBots = json.loads(botsFile.read().rstrip())
+runFile = open("info.json", "r")
+runInfo = json.loads(runFile.read().rstrip())
+
+token = runInfo["token"]
+supportedOsuBots = runInfo["bots"]
 
 @client.event
 async def on_ready():
@@ -15,7 +16,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    elif ((message.author.id in supportedOsuBots.values())) and (random.randint(0,10) <= 2):
+    elif (message.author.id in supportedOsuBots) and (random.randint(0,10) <= 2):
         await message.channel.send('*We don’t know if trying our best will help, but we do know, that if we don’t try our best, it won’t help for sure!*')
         return
 
