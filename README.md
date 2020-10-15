@@ -5,7 +5,7 @@
 
 *Source: Hyouka (TV Anime)*
 
-## Features
+## Features (20% for each)
  - Says her signature catchphrase whenever a message with any variation of "what" or "how" (in Japanese or English) is sent by a user
  
  - Detects frustration and/or confusion in messages and responds with corresponding quotes
@@ -18,7 +18,7 @@
 
  - Tells you it's spring if someone says it's cold
  
- - Detects Japanese input; prompts a message 50% of the time
+ - Detects Japanese input; prompts a message 50% (of 20%) of the time
 
 ## Adding ChitandaBot to Your Discord Server
 ### To add Chitanda to your server, use [this link](https://discordapp.com/api/oauth2/authorize?client_id=691787045881905182&permissions=134220800&scope=bot).

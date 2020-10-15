@@ -29,18 +29,21 @@ async def on_message(message):
     nani = re.search(r"\u306A(\u306B|\u3093\u3067)|\u4F55|\u3069\u3046|\b[Nn]+[Aa][Nn]+[Ii]*\b|\b[Dd]+[Oo]+[Uu]+\b",msg)
     japanese = re.search(r"[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf\u3400-\u4dbf]+",msg)
 
-    if angry or dontGetIt or cold:
-        if angry:
-            await message.channel.send('*If you can never get angry at anything, that probably means you have nothing that you like, either.*')
-        elif dontGetIt:
-            await message.channel.send('*I find myself hard to understand sometimes.*')
-        elif cold:
-            await message.channel.send('*Iie, mou haru desu.* :relaxed:')
-    elif questionPresent or nani:
-        await message.channel.send('*Watashi, ki ni narimasu!* :astonished:')
-    elif uwu:
-        await message.channel.send(':flushed:')
-    elif japanese and (random.randint(0,10) <= 5):
-        await message.channel.send('*日本語喋れる？*')
+    reactChance = random.randint(0,10)
+
+    if reactChance < 2:
+        if angry or dontGetIt or cold:
+            if angry:
+                await message.channel.send('*If you can never get angry at anything, that probably means you have nothing that you like, either.*')
+            elif dontGetIt:
+                await message.channel.send('*I find myself hard to understand sometimes.*')
+            elif cold:
+                await message.channel.send('*Iie, mou haru desu.* :relaxed:')
+        elif questionPresent or nani:
+            await message.channel.send('*Watashi, ki ni narimasu!* :astonished:')
+        elif uwu:
+            await message.channel.send(':flushed:')
+        elif japanese and (random.randint(0,10) <= 5):
+            await message.channel.send('*日本語喋れる？*')
 
 client.run(token)
